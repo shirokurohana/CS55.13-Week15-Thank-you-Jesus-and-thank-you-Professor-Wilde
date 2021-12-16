@@ -1,0 +1,22 @@
+If using Repl.it with tutorial at https://ionicframework.com/docs/react/your-first-app:
+
+Follow these modified steps:
+
+1. Create a new directory/folder in Files root, cd into new directory.
+
+2. Change the following shell command found in tutorial:
+     npm install -g @ionic/cli native-run cordova-res
+   TO: (newly-created directory must be current directory)
+     npm install @ionic/cli native-run cordova-res
+
+3. Change the following shell command found in tutorial:
+     ionic start photo-gallery tabs --type=react --capacitor
+   TO:
+     node_modules/@ionic/cli/bin/ionic start photo-gallery tabs --type=react --capacitor
+
+4. cd into "photo-gallery" directory.
+
+5. Change the following shell command found in tutorial:
+     ionic serve
+   TO: (photo-gallery directory must be current directory)
+     ../node_modules/@ionic/cli/bin/ionic serve
